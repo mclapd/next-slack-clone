@@ -53,7 +53,7 @@ const WorkspaceIdLayout = ({ children }: WorkspaceIdLayoutProps) => {
                   </div>
                 ) : (
                   <div className="flex h-full items-center justify-center">
-                    <Loader className="size-5 animate-ping text-muted-foreground" />
+                    <Loader className="size-5 animate-spin text-muted-foreground" />
                   </div>
                 )}
               </ResizablePanel>
