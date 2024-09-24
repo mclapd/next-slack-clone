@@ -28,11 +28,15 @@ export const Thumbnail = ({ url }: ThumbnailProps) => {
         </div>
       </DialogTrigger>
       <DialogContent className="max-w-[800px] border-none bg-transparent p-0 shadow-none">
-        <img
-          src={url}
-          alt="Message image"
-          className="rounded-md object-cover size-full"
-        />
+        <DialogHeader>
+          <DialogTitle>
+            <img
+              src={url}
+              alt="Message image"
+              className="rounded-md object-cover size-full"
+            />
+          </DialogTitle>
+        </DialogHeader>
       </DialogContent>
     </Dialog>
   );
